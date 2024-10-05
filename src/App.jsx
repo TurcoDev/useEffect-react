@@ -13,10 +13,16 @@ function App() {
     // fetch('https://randomuser.me/api/?results=1')
     // .then(response => response.json())
     // .then(data2 => setData(JSON.stringify(data2)));
-    fetch('http://localhost:3000/')
+    // opcion configuracion vite react
+    fetch('/')
     .then(response => response.json())
     .then(data2 => setData(JSON.stringify(data2)));
   }, [])
+  // Opcion configuracion server express
+  //   fetch('http://localhost:3000')
+  //   .then(response => response.json())
+  //   .then(data2 => setData(JSON.stringify(data2)));
+  // }, [])
 
   return (
     <>
